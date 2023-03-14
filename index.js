@@ -5,6 +5,8 @@ const hostname = "127.0.0.1";
 const followers = require("./followers.json");
 const following = require("./following.json");
 
+app.set("view engine", "ejs");
+
 app.get("/", (req, res) => {
   const arr = [];
 
@@ -24,7 +26,7 @@ app.get("/", (req, res) => {
     }
   }
 
-  res.json(arr);
+  res.render("index", { arr: arr });
 });
 
 app.get("/followers", (req, res) => {
