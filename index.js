@@ -8,6 +8,10 @@ const following = require("./following.json");
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
+  res.render("index");
+});
+
+app.get("/result", (req, res) => {
   const arr = [];
 
   for (let i = 0; i < following.length; i++) {
@@ -26,7 +30,7 @@ app.get("/", (req, res) => {
     }
   }
 
-  res.render("index", { arr: arr });
+  res.render("result", { arr: arr });
 });
 
 app.get("/followers", (req, res) => {
