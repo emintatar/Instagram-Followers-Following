@@ -4,6 +4,6 @@
 
 ### "/" route returns result
 
-### "/followers" returns returns followers.json
+### "/followers" returns followers.json
 
 ### "/following" route returns following.json
