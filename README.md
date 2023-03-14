@@ -2,6 +2,8 @@
 
 ## Then put the "following.json" and "followers.json" files in the "followers_and_following" folder to the directory where the program is.
 
-### /followers returns followers.json
+### "/" route returns result
 
-### /following returns following.json
+### "/followers" returns returns followers.json
+
+### "/following" route returns following.json
